@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/4.0.6/sweetalert2.min.css">
+</head>
+
+<body ng-app="MyApp">
+
+    <div ng-controller="MyController as vm">
+        Hallo {{vm.value}}
+
+        <p ng-click="vm.info('HI!', 'Info message', 2000)">Info (timer 2s)</p>
+        <p ng-click="vm.warning('HI!', 'Warning')">Warning</p>
+        <p ng-click="vm.show('HI!', 'Without type')">Show (no type)</p>
+        <p ng-click="vm.show('HI!', 'Question type', 'question')">Show (with type)</p>
+        <p ng-click="vm.show('HI!', 'Question type', 'warning', 2000)">Show (with type and timers)</p>
+        <p ng-click="vm.confirm('HI!', 'Question type', 'question')">Confirm</p>
+
+        <a sweet-confirm 
+            swal-title="Hi" 
+            swal-text="{{vm.value}}" 
+            swal-confirm-text="OKAY Så {{vm.value}}" 
+            swal-on-confirm="vm.warning('OH OH', result)" 
+            swal-on-cancel="vm.info('Cancelled')" 
+            swal-on-dismiss="vm.error(dismiss)"
+            swal-pre-confirm="vm.ajax"
+            swal-confirm-color="#ffF000">
+            swal-confirm directive
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/sweetalert2/4.0.6/sweetalert2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="src/sweetAlert.module.js"></script>
+    <script src="src/sweetAlert.service.js"></script>
+    <script src="src/directives/sweet-confirm.js"></script>
+    <script src="src/directives/sweet-prompt.js"></script>
+    <script src="src/directives/sweet-alert-html.js"></script>
+
+</body>
+
+</html>
