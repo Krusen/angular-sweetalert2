@@ -1,4 +1,6 @@
 # WORK IN PROGRESS
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FKrusen%2Fangular-sweetalert2.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FKrusen%2Fangular-sweetalert2?ref=badge_shield)
+
 
 I haven't had neither the time nor the need to finish this yet, so use at your own risk for now.
 
@@ -43,3 +45,7 @@ I haven't had neither the time nor the need to finish this yet, so use at your o
 
 </body>
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FKrusen%2Fangular-sweetalert2.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FKrusen%2Fangular-sweetalert2?ref=badge_large)
